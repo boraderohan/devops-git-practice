@@ -31,3 +31,13 @@ If you have uncommited changes that conflict with commit them first.
 Ans: Origin: The default name for the remote repository you cloned from your repo on GitHub 
 Upstream: A conventional name for the original source repository you forked from. 
 It is not set automatically, you add it manually.
+
+5)What is the difference between git fetch and git pull?
+
+Ans: The core difference is simple:
+
+git fetch: you want to review changes before mergeing, or work in a shared codebase where unexpected conflicts are concern
+
+git pull: you want to quickly sync your branch and trust the incoming changes.\
+
+
