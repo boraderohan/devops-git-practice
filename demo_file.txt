@@ -1,3 +1,0 @@
-This is my file in the feature-1
-And this file will merged and then will be pushed on the demo_repo in the main branch
-
