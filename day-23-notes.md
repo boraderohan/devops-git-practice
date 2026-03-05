@@ -25,3 +25,9 @@ Every time you swithch branches or check out a specific commit, HEAD moves accor
 Ans: When you switch branches in Git, your working directory files are automatically updaed to match the target branch's latest commit.
 
 If you have uncommited changes that conflict with commit them first.
+
+5)What is the difference between origin and upstream?
+
+Ans: Origin: The default name for the remote repository you cloned from your repo on GitHub 
+Upstream: A conventional name for the original source repository you forked from. 
+It is not set automatically, you add it manually.
