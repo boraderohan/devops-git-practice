@@ -32,7 +32,7 @@ Ans: Origin: The default name for the remote repository you cloned from your rep
 Upstream: A conventional name for the original source repository you forked from. 
 It is not set automatically, you add it manually.
 
-5)What is the difference between git fetch and git pull?
+6)What is the difference between git fetch and git pull?
 
 Ans: The core difference is simple:
 
@@ -40,4 +40,42 @@ git fetch: you want to review changes before mergeing, or work in a shared codeb
 
 git pull: you want to quickly sync your branch and trust the incoming changes.\
 
+7)What is the difference between clone and fork?
 
+Ans: Clone creates a local copy of an existing repository on you machine, typically for personal use or development.
+
+It doesn't create a new remote repository.
+
+Fork creates a presonal copy of a repository on a remote platfrom (GitHub), allowing you to make changes independently and later propose them back via pull requests.
+
+8)When to Clone vs Fork?
+
+Ans: clone when you:
+
+Just want to use or build the code locally.
+
+Don't plan to contribute changes back.
+
+Are setting up a project for testing or learning.
+
+Fork when you:
+
+Want to contribute changes back to the original repo (via Pull Request)
+
+Need to modify the code and maintain your own version.
+
+Are collaborating or experimenting without affecting the original.
+
+9)After forking, how do you keep your fork in sync with the original repo?
+
+Ans: git remote add upstream ssh://github.com/original-owner/repo.git
+
+git fetch upstream 
+
+git rebase upstream/main
+
+git merger upstream/main
+
+git push origin main
+
+git fetch upstream && git rebase upstream && git push origin main.
